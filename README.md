@@ -1,31 +1,31 @@
-# MOSPORT BASEBALL LIFE v0.9
+# MOSPORT BASEBALL LIFE v1.0
 
 一個由高中一路走到大學、業餘、職棒與退休的年度制棒球人生遊戲。
 
-## v0.9 重點
+## v1.0：動態球季事件流
 
-- 核心單位是「關鍵對位」：球數、壘況、出局數、分差與對手類型都會改變選項。
-- 選擇前只顯示成功機率與風險，選擇後才抽樣並揭曉結果。
+- 不再固定每季 3 張事件卡、3 次關鍵對位。
+- 每季開始時，依聯盟階段、球隊角色、教練信任、疲勞與健康生成不同日程。
+- 每季約有 10–22 個日常事件：自動結算狀態與 PMV 證據，不要求玩家反覆點選。
+- 每季約有 5–10 個生涯抉擇：訓練、角色、隊內、家庭、健康、媒體、市場與合約等重要事件由玩家選擇。
+- 每季約有 3–6 次例行賽關鍵對位；季後賽與冠軍賽另行追加。
+- 同一季優先不重複相同事件；關鍵對位不會連續出現相同完整情境。
+- 事件與對位數會實際寫入球季結算、生涯紀錄與匯出存檔。
+- 跨季疲勞、健康、手感與士氣依年齡和休季恢復動態變化，不再固定重設。
+
+## 既有核心
+
+- 球數、壘況、出局數、分差與對手類型會改變關鍵對位選項。
+- 選擇前顯示成功機率與風險，選擇後才抽樣並揭曉結果。
 - 高中畢業能力達標可直接參加職棒選秀；大一至大四每年都能投入選秀。
-- 18 個生涯公開標籤，記錄選擇、角色與重要成就。
-- 投手 16 個、野手 16 個歷史原型隱藏標籤，每季最多覺醒一個。
-- 隱藏標籤不是裝飾：覺醒後會對相符的關鍵對位提供小幅加成。
-- 舊版存檔可直接接續。
+- 公開標籤記錄選擇、角色與重要成就。
+- 投手與野手各有 16 個歷史原型隱藏標籤，每季最多覺醒一個。
+- 隱藏標籤覺醒後，會對相符的關鍵對位提供小幅加成。
 
-## 歷史原型依據
+## 存檔相容性
 
-原型使用遊戲可追蹤的傳統數據與情境資料判定，包括 AVG、OBP、SLG、OPS、SB、E、ERA、WHIP、K/9、BB/9、K/BB、先發局數、牛棚出勤、關鍵對位成功率與季後賽深度。
-
-規則與定義參考：
-
-- [WBSC Official Rules of Baseball](https://www.wbsc.org/en/organisation/baseball/rules)
-- [MLB Standard Stats Glossary](https://www.mlb.com/glossary/standard-stats)
-- [MLB Statcast Glossary](https://www.mlb.com/glossary/statcast)
-- [MLB five-tool player definition](https://www.mlb.com/news/building-the-best-5-tool-player-in-baseball-in-2024)
-- [MLB power-speed historical archetype](https://www.mlb.com/news/30-30-club-broken-down-by-team-c290480838)
-
-遊戲門檻已依縮短球季樣本調整，不等同於任何單一聯盟的正式獎項資格。
+v1.0 使用新的獨立存檔鍵。v0.9 固定事件流程的存檔不會被默默套入動態球季；請建立 v1.0 新生涯。
 
 ## 部署
 
-GitHub 根目錄保留 `index.html` 與本檔案即可由 Vercel 以靜態網站部署。
+GitHub 根目錄只需保留 `index.html` 與本檔案，即可作為靜態網站部署。
